@@ -23,11 +23,13 @@ android {
 
     buildTypes {
         debug {
+            resValue("string", "google_maps_key", localProperties['googleMapsKey'])
             resValue("string", "google_direction_api", localProperties['googleDirectionApi'])
             resValue("string", "facebook_app_id", localProperties['facebookAppId'])
             resValue("string", "fb_login_protocol_scheme", localProperties['fbLoginProtocolScheme'])
         }
         release {
+            resValue("string", "google_maps_key", localProperties['googleMapsKey'])
             resValue("string", "google_direction_api", localProperties['googleDirectionApi'])
             resValue("string", "facebook_app_id", localProperties['facebookAppId'])
             resValue("string", "fb_login_protocol_scheme", localProperties['fbLoginProtocolScheme'])
@@ -42,7 +44,6 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
