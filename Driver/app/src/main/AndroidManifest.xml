@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Driver">
+        android:theme="@style/Theme.Driver2">
         <activity android:name="com.dodemy.driver.Activities.TripHistory">
 
         </activity>
