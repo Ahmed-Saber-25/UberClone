@@ -24,11 +24,13 @@ android {
 //<string name="google_direction_api">AIzaSyAtH_M09NjZQ5jRmCDewDUu0PpBRLRSyZY</string>
     buildTypes {
         debug {
+            resValue("string", "google_maps_key", localProperties['googleMapsKey'])
             resValue("string", "google_direction_api", localProperties['googleDirectionApi'])
             resValue("string", "facebook_app_id", localProperties['facebookAppId'])
             resValue("string", "fb_login_protocol_scheme", localProperties['fbLoginProtocolScheme'])
         }
         release {
+            resValue("string", "google_maps_key", localProperties['googleMapsKey'])
             resValue("string", "google_direction_api", localProperties['googleDirectionApi'])
             resValue("string", "facebook_app_id", localProperties['facebookAppId'])
             resValue("string", "fb_login_protocol_scheme", localProperties['fbLoginProtocolScheme'])
