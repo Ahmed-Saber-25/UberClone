@@ -42,10 +42,10 @@ public class FirebaseMessaging extends FirebaseMessagingService {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        /*Intent intent = new Intent(getBaseContext(), .class);
+                        Intent intent = new Intent(getBaseContext(), FirebaseMessaging.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         intent.putExtra("keyDriver",remoteMessage.getNotification().getBody());
-                        startActivity(intent);*/
+                        startActivity(intent);
 
                     }
                 });
