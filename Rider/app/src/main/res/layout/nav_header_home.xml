@@ -45,7 +45,7 @@
                 android:src="@drawable/ic_star"/>
             <TextView
                 android:id="@+id/tvStars"
-                android:text="4.0"
+                android:text="4.9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"/>
