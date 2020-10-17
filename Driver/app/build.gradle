@@ -3,6 +3,9 @@ plugins {
 //    id 'com.google.gms.google-services'
 }
 
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -16,9 +19,19 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+//<string name="facebook_app_id">2210819865853004</string>
+//<string name="fb_login_protocol_scheme">fb2210819865853004</string>
+//<string name="google_direction_api">AIzaSyAtH_M09NjZQ5jRmCDewDUu0PpBRLRSyZY</string>
     buildTypes {
+        debug {
+            resValue("string", "google_direction_api", localProperties['googleDirectionApi'])
+            resValue("string", "facebook_app_id", localProperties['facebookAppId'])
+            resValue("string", "fb_login_protocol_scheme", localProperties['fbLoginProtocolScheme'])
+        }
         release {
+            resValue("string", "google_direction_api", localProperties['googleDirectionApi'])
+            resValue("string", "facebook_app_id", localProperties['facebookAppId'])
+            resValue("string", "fb_login_protocol_scheme", localProperties['fbLoginProtocolScheme'])
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
