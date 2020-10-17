@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">Driver</string>
-
     <string name="title_activity_main">Map</string>
-    <string name="google_direction_api">AIzaSyDcUwk5nBq2FTZsbWDVt1gQKW1MZYw5Ioo</string>
+    <string name="google_direction_api">AIzaSyAtH_M09NjZQ5jRmCDewDUu0PpBRLRSyZY</string>
     <string name="tv_login_title">DRIVER</string>
     <string name="tv_login_subtitle">UBER CLONE</string>
     <string name="login">LOG IN</string>
