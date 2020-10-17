@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trip_history">Trip History</string>
+    <string name="update_information">Update Information</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="driver_name">Driver name:</string>
+    <string name="madu">Madu</string>
+    <string name="_4_7">4.7</string>
+</resources>

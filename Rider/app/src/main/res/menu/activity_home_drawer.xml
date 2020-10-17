@@ -7,15 +7,15 @@
         <item
             android:id="@+id/nav_trip_history"
             android:icon="@drawable/ic_trip_history"
-            android:title="Trip History" />
+            android:title="@string/trip_history" />
         <item
             android:id="@+id/nav_updateInformation"
             android:icon="@drawable/ic_event_note"
-            android:title="Update Information" />
+            android:title="@string/update_information" />
         <item
             android:id="@+id/nav_signOut"
             android:icon="@drawable/ic_exit_to_app_black_24dp"
-            android:title="Sign Out" />
+            android:title="@string/sign_out" />
     </group>
 
 
